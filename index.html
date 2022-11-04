@@ -16,71 +16,42 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-		<link rel="shortcut icon" href="images/RIPPERS-icon.png" type="image/png">
+		<link rel="shortcut icon" href="" type="image/png">
 
-		<title></title>
-		<style type="text/css">
-			/* HIDE checkbox */
-			[type=checkbox] { 
-				position: absolute;
-				opacity: 0;
-				width: 0;
-				height: 0;
-			}
+		<link rel="stylesheet" href="style.css">
 
-			/* IMAGE STYLES */
-			[type=checkbox] + img {
-				cursor: pointer;
-				opacity: 0.1;
-				width: 50px;
-			}
+		<title>Таблица для рейдов</title>
 
-			/* CHECKED STYLES */
-			[type=checkbox]:checked + img {
-				/*outline: 2px solid #f00;*/
-				opacity: 1;
-			}
-
-			.nav-link{
-				padding: 3px;
-			}
-			.nav-tabs .nav-link.active{
-				background: transparent;
-				border-color: transparent;
-				opacity: 1;
-				border: 0;
-			}
-			.nav-tabs .nav-link{
-				opacity: 0.3;
-				border: 0;
-				padding-top: 0px;
-			}
-			.nav-tabs .nav-link: hover{
-				border: 0;
-			}
-			.nav-tabs{
-				border-bottom: 0;
-				border: 0;
-			}
-			.nav-tabs: hiver{
-				border-bottom: 0;
-				border: 0;
-			}
-			/*.nav-item{
-				display: block;
-			}*/
-		</style>
 	</head>
 	<body style="background-color: #36393f;">
-		<div style="padding: 100px;">
+
+		<div class="container" style="padding: 50px;">
+		  <div class="row">
+		    <div class="col">
+				<div class="input-group col-mb-3">
+					<img width="50" src="https://cdn.discordapp.com/icons/573260117773123605/e308574f6fed836ef4d67b08f475e1ff.webp?size=96" alt="Option 1">
+					<input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1" value="https://discord.gg/6D6FEgn2Mu">
+				</div>
+		    </div>
+		    <div class="col">
+				<div class="input-group col-mb-3">
+					<img width="50" src="https://cdn.discordapp.com/icons/579657209730826240/0c65d0d6b1f3987e2e867b6792f87336.webp?size=96" alt="Option 1">
+					<input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1" value="https://discord.gg/hZxmvvma">
+				</div>
+		    </div>
+		  </div>
+		</div>
+
+		<div style="padding: 100px; padding-top: 0;">
 			<table class="table table-bordered table-hover table-dark">
 			<thead>
 				<tr>
-					<th scope="col">#</th>
+					<th scope="col" class="por-nomer">#</th>
 					<th scope="col" style="width: 185px">Тип</th>
 					<th scope="col" style="width: 150px">Класс</th>
 					<th scope="col" style="width: 185px">Спек</th>
-					<th scope="col" style="width: 95px">ГС</th>
+					<th scope="col" style="width: 95px">ГС мэйн</th>
+					<th scope="col" style="width: 95px">ГС офф</th>
 					<th scope="col" style="width: 250px">Имя</th>
 					<th scope="col">Комент</th>
 				</tr>
@@ -115,7 +86,7 @@
 				<!-- Строка #1 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">1</th>
+					<th scope="row" class="por-nomer">1</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -325,7 +296,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -353,7 +331,7 @@
 				<!-- Строка #2 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">2</th>
+					<th scope="row" class="por-nomer">2</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -563,7 +541,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -590,7 +575,7 @@
 				<!-- Строка #3 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">3</th>
+					<th scope="row" class="por-nomer">3</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -800,7 +785,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -827,7 +819,7 @@
 				<!-- Строка #4 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">4</th>
+					<th scope="row" class="por-nomer">4</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -1037,7 +1029,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -1064,7 +1063,7 @@
 				<!-- Строка #5 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">5</th>
+					<th scope="row" class="por-nomer">5</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -1274,7 +1273,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -1301,7 +1307,7 @@
 				<!-- Строка #6 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">6</th>
+					<th scope="row" class="por-nomer">6</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -1511,7 +1517,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -1538,7 +1551,7 @@
 				<!-- Строка #7 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">7</th>
+					<th scope="row" class="por-nomer">7</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -1748,7 +1761,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -1775,7 +1795,7 @@
 				<!-- Строка #8 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">8</th>
+					<th scope="row" class="por-nomer">8</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -1985,7 +2005,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -2012,7 +2039,7 @@
 				<!-- Строка #9 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">9</th>
+					<th scope="row" class="por-nomer">9</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -2222,7 +2249,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -2249,7 +2283,7 @@
 				<!-- Строка #10 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">10</th>
+					<th scope="row" class="por-nomer">10</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -2459,7 +2493,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -2486,7 +2527,7 @@
 				<!-- Строка #11 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">11</th>
+					<th scope="row" class="por-nomer">11</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -2696,7 +2737,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -2723,7 +2771,7 @@
 				<!-- Строка #12 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">12</th>
+					<th scope="row" class="por-nomer">12</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -2933,7 +2981,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -2960,7 +3015,7 @@
 				<!-- Строка #13 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">13</th>
+					<th scope="row" class="por-nomer">13</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -3170,7 +3225,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -3197,7 +3259,7 @@
 				<!-- Строка #14 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">14</th>
+					<th scope="row" class="por-nomer">14</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -3407,7 +3469,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -3434,7 +3503,7 @@
 				<!-- Строка #15 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">15</th>
+					<th scope="row" class="por-nomer">15</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -3644,7 +3713,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -3671,7 +3747,7 @@
 				<!-- Строка #16 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">16</th>
+					<th scope="row" class="por-nomer">16</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -3881,7 +3957,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -3908,7 +3991,7 @@
 				<!-- Строка #17 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">17</th>
+					<th scope="row" class="por-nomer">17</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -4118,7 +4201,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -4145,7 +4235,7 @@
 				<!-- Строка #18 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">18</th>
+					<th scope="row" class="por-nomer">18</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -4355,7 +4445,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -4382,7 +4479,7 @@
 				<!-- Строка #19 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">19</th>
+					<th scope="row" class="por-nomer">19</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -4592,7 +4689,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -4619,7 +4723,7 @@
 				<!-- Строка #20 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">20</th>
+					<th scope="row" class="por-nomer">20</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -4829,7 +4933,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -4856,7 +4967,7 @@
 				<!-- Строка #21 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">21</th>
+					<th scope="row" class="por-nomer">21</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -5066,7 +5177,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -5093,7 +5211,7 @@
 				<!-- Строка #22 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">22</th>
+					<th scope="row" class="por-nomer">22</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -5303,7 +5421,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -5330,7 +5455,7 @@
 				<!-- Строка #23 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">23</th>
+					<th scope="row" class="por-nomer">23</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -5540,7 +5665,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -5567,7 +5699,7 @@
 				<!-- Строка #24 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">24</th>
+					<th scope="row" class="por-nomer">24</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -5777,7 +5909,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
@@ -5804,7 +5943,7 @@
 				<!-- Строка #25 -->
 				<tr>
 					<!-- Колонка Порядковый номер -->
-					<th scope="row">25</th>
+					<th scope="row" class="por-nomer">25</th>
 
 					<!-- Колонка типа -->
 					<td style="width: 185px">
@@ -6014,7 +6153,14 @@
 						</div>
 					</td>
 
-					<!-- Колонка ГС -->
+					<!-- Колонка ГС мэйн -->
+					<td style="width: 95px">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
+						</div>
+					</td>
+
+					<!-- Колонка ГС офф -->
 					<td style="width: 95px">
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="ГС" aria-label="ГС" aria-describedby="basic-addon1">
